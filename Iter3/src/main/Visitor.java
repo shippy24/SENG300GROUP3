@@ -1,5 +1,7 @@
 //iter3, now counts annotations
 // now counts anon class types 
+// should count annondecl
+// counts marker annot separately
 package main;
 
 import java.util.HashMap;
@@ -22,7 +24,11 @@ public class Visitor extends ASTVisitor{
 	public int annotCount;
 	public int primiCount;
 	public int otherInterCount; // other interface declarations (non local, non nested, non anon)
-	public int importDecCount; // not so important
+	//public int importDecCount; // not so important
+	public int nestedAnnotCount; // counts nested
+	public int localAnnotCount; // counts local annot
+	public int otherAnnotCount; // anything that is NOT local and NOT nested
+	
 	
 	//public Integer otherInterCount;
 	
@@ -74,7 +80,19 @@ public class Visitor extends ASTVisitor{
 	public boolean visit(AnnotationTypeDeclaration node) {
 		String key = node.resolveBinding().getQualifiedName();
 		Integer[] count = map.get(key);
-		annotCount ++;
+		
+		if(node.resolveBinding().isNested()) {
+			nestedAnnotCount ++ ;
+		}
+		
+		if(node.resolveBinding().isLocal()) {
+			localAnnotCount ++ ;
+		}
+		
+		if(!node.resolveBinding().isNested() & !node.resolveBinding().isLocal()) {
+			otherAnnotCount ++ ;
+		}
+		
 		if(count != null) 
 			count[0]++;
 		else
@@ -88,6 +106,7 @@ public class Visitor extends ASTVisitor{
 		String key = node.resolveTypeBinding().getQualifiedName();
 		Integer[] count = map.get(key);
 		annotCount ++ ;
+	
 		if(count != null) 
 			count[1]++;
 		else
@@ -161,7 +180,7 @@ public class Visitor extends ASTVisitor{
 	public boolean visit(ImportDeclaration node) {
 		String key = node.resolveBinding().getName();
 		Integer[] count = map.get(key);
-		importDecCount ++ ; 
+		//importDecCount ++ ; 
 		if(count != null) 
 			count[1]++;
 		else

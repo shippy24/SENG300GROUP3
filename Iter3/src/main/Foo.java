@@ -19,7 +19,7 @@ public class Foo {
 	 * Points to a base directory of a machine</br>
 	 * @author SeungBin, Yim
 	 */
-	private static String BASEDIR = "/Users/TonyTea/Documents/GitHub/SENG-Iteration-2/Iteration2/src/typeCounter/";
+	private static String BASEDIR = "/Users/TonyTea/Desktop/ProjectsForIter3/libSBOLj-master";
 	/**
 	 * Constructor, prints out all declarations and references from sources in BASEDIR </br>	 * 
 	 * @author SeungBin, Yim
@@ -32,6 +32,10 @@ public class Foo {
 	static ArrayList<Integer> pr = new ArrayList<Integer>();
 	static ArrayList<Integer> at = new ArrayList<Integer>();
 	static ArrayList<Integer> im = new ArrayList<Integer>();	
+	static ArrayList<Integer> an = new ArrayList<Integer>();	
+	static ArrayList<Integer> la = new ArrayList<Integer>();	
+	static ArrayList<Integer> ao = new ArrayList<Integer>();	
+	
 	
 	public Foo() {
 		Map<String, Integer[]> finalMap = new HashMap();
@@ -112,6 +116,9 @@ public class Foo {
 		it.add(vis.otherInterCount);
 		pr.add(vis.primiCount);
 		at.add(vis.annotCount);
+		an.add(vis.nestedAnnotCount);
+		la.add(vis.localAnnotCount);
+		ao.add(vis.otherAnnotCount);
 		
 		return vis.getMap();	
 	}
@@ -125,6 +132,9 @@ public class Foo {
 		int p = 0; // ints
 		int a = 0; // annotations
 		int i = 0; // imports
+		int c = 0; // nestedannot
+		int d = 0; // local annot
+		int e = 0; // other annot
 		
 		for (int object: al) {
 			x = x + object;
@@ -154,15 +164,29 @@ public class Foo {
 			i = i  + object;
 		}
 		
+
+		for (int object: an) {
+			c = c  + object;
+		}
 		
+		for (int object: la) {
+			d = d  + object;
+		}
+		
+		for (int object: ao) {
+			e = e  + object;
+		}
 		
 		System.out.println("Nested type count: " + x);
 		System.out.println("Local type count: " + y);
 		System.out.println("Anonymous type count: " + z);
 		System.out.println("Other Interface and Class declarations: " + q); // non nested, non local, non anon
 		System.out.println("Primitve type count: " + p);
-		System.out.println("Annotation count: " + a);
+		System.out.println("Marker Annotation count: " + a);
 		System.out.println("Import declarations count: " + i);
+		System.out.println("Nested annotation count:" + c);
+		System.out.println("Local annotation count: " + d);
+		System.out.println("Other annotation count: " + e);
 	}
 	
 	
