@@ -1,0 +1,7 @@
+Build on the existing tests
+Directory tests
+  -Regular direcory.
+  -null directory
+  -derectory within a .jar file
+  
+Cases for class declaration within a method.

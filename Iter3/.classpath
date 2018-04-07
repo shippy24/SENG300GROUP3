@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/2017-2018/untitled folder 4/org.eclipse.jdt.core_3.12.1.v20160829-0950.jar"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/SENG300/JarsFoSeng/org.eclipse.osgi_3.11.1.v20160708-1632.jar"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/SENG300/JarsFoSeng/org.eclipse.core.contenttype_3.5.100.v20160418-1621 2.jar"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/SENG300/JarsFoSeng/org.eclipse.core.contenttype_3.5.100.v20160418-1621.jar"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/SENG300/JarsFoSeng/org.eclipse.core.jobs_3.8.0.v20160509-0411.jar"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/SENG300/JarsFoSeng/org.eclipse.core.resources_3.11.0.v20160503-1608.jar"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/SENG300/JarsFoSeng/org.eclipse.core.runtime_3.12.0.v20160606-1342.jar"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/SENG300/JarsFoSeng/org.eclipse.equinox.common_3.8.0.v20160509-1230.jar"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/SENG300/JarsFoSeng/org.eclipse.equinox.preferences_3.6.1.v20160815-1406.jar"/>
+	<classpathentry kind="lib" path="/Users/TonyTea/Desktop/SENG300/JarsFoSeng/org.eclipse.jdt.core_3.12.1.v20160829-0950.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
