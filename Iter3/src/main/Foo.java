@@ -19,7 +19,7 @@ public class Foo {
 	 * Points to a base directory of a machine</br>
 	 * @author SeungBin, Yim
 	 */
-	private static String BASEDIR = "/Users/TonyTea/Desktop/ProjectsForIter3/caleydo-develop/Ento to next/org.caleydo.vis.lineup";
+	private static String BASEDIR = "/Users/TonyTea/Documents/GitHub/SENG-Iteration-2/Iteration2/src/typeCounter/";
 	/**
 	 * Constructor, prints out all declarations and references from sources in BASEDIR </br>	 * 
 	 * @author SeungBin, Yim

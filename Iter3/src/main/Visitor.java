@@ -1,4 +1,5 @@
 //iter3, now counts annotations
+// now counts anon class types 
 package main;
 
 import java.util.HashMap;
@@ -21,7 +22,7 @@ public class Visitor extends ASTVisitor{
 	public int annotCount;
 	public int primiCount;
 	public int otherInterCount; // other interface declarations (non local, non nested, non anon)
-	public int importDecCount;
+	public int importDecCount; // not so important
 	
 	//public Integer otherInterCount;
 	
@@ -169,6 +170,15 @@ public class Visitor extends ASTVisitor{
 		return super.visit(node);
 	}
 	
+	public boolean visit(AnonymousClassDeclaration node) {
+		if (node.resolveBinding().isAnonymous()) {
+			anonymousCount++;
+			System.out.println(node.resolveBinding().getQualifiedName());
+		}
+		
+		return super.visit(node);
+		
+	}
 
 
 	
