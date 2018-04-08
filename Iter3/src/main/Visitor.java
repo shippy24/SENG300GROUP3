@@ -136,6 +136,7 @@ public class Visitor extends ASTVisitor {
 			map.put(key, count);
 		}catch(Exception e) {
 			System.out.println(e.toString());
+			annotCount++;
 		}
 		
 		return super.visit(node);

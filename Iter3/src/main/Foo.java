@@ -19,7 +19,7 @@ public class Foo {
 	 * Points to a base directory of a machine</br>
 	 * @author SeungBin, Yim
 	 */
-	private static String BASEDIR = "/Users/shayn/Desktop/Projects/ExoPlayer-release-v2";
+	private static String BASEDIR = "/Users/shayn/Desktop/Projects/deeplearning4j-master";
 	/**
 	 * Constructor, prints out all declarations and references from sources in BASEDIR </br>	 * 
 	 * @author SeungBin, Yim
