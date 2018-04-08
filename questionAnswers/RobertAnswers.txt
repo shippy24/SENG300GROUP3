@@ -1,0 +1,60 @@
+When saying "systems" I mean programs but I didn't wanna use that word in every sentence...
+
+1.
+The number of nested types seems to be correlated with the complexity of the given program and
+the number of primitive types present. In my case nested types appear in programs with 150 and
+more primitive types where the ratio of primitives to nested is usually around 1:20.
+
+2.
+Local types seem to be quite rare, our program haven't found a single one in any of the
+programs I pulled from GitHub. My peers encountered a similar situation, we haven't found
+more than 10. 
+
+3.
+Usage of anonymous types varies greatly. I would assume it depends on the particular programmer
+and his practices. When they appear, it's always a larger system with a lot of other types but that 
+doesn't seem to be a rule. One of the programs I pulled from GitHub only has one even though it used
+primitive types roughly 2500 times.
+
+4.
+Other types make up the majority compared to nested, local and anonymous. I found some in every 
+single program. Their count would always be greater than all of the nested, local and anonymous
+combined. However, they were still nowhere nearly as common as primitive types. 
+
+5.
+The differences between different programs do not seem to be huge. The number of primitives
+is always the highest. The second place always goes to either marker annotations or to
+other interface and class declarations. And then there's the nested and local types
+which can be encountered in larger systems. Anonymous, as stated, are almost non-existent.
+
+THE REST:
+
+SELECTION
+I selected my systems based on the number of contributors (usually between 5 and 10 but
+there's also programs with only 2 contributors and one with a single contributor). Each of the
+programs had to have been updated recently. I also looked at different categories including
+games, math, simulation and algorithms.
+
+COLLECTION
+We used one of our teammate's iteration 2 system. The counting of various data types had to
+be altered to fit the purposes of this assignment but no major changes (lol, I have no
+idea, didn't work on the code, just assuming...).
+
+BUGS
+There were a few minor bugs which were fixed promptly. In the beginning the first three types 
+weren't counted at all (nested, local, anonymous).
+
+CORRECTNESS OF THE RESULTS
+The data seems to be sound, no type was left out (in scope of the entire team) and the numbers
+seem to correspond our programming experience (Eg. heavy usage of primitives). However, a more
+detailed analysis would be needed to make sure everything is 100% correct.
+
+GENERALIZATION
+In certaion areas, the results are probably representative of other programming languages as well. 
+Like for example primitive data type usage in relation to other data types.
+
+NESTED, LOCAL, ANONYMOUS
+Their usage indeed seems to vary but it also appears that when developing a larger program,
+developers have no choice and have to use them to make their systems more concise, readable and
+generalized. So yes, I would say they are worthwhile when there's time and resources.
+(I have no idea what I am talking about.)
