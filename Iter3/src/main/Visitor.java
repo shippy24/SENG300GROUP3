@@ -14,7 +14,7 @@ import org.eclipse.jdt.core.dom.*;
  * AST Visitor for only visiting Declarations
  * @author SeungBin, Yim
  */
-public class Visitor extends ASTVisitor{
+public class Visitor extends ASTVisitor {
 	Map<String, Integer[]> map = new HashMap<String, Integer[]>();
 	
 	//public int[] counter;
@@ -39,22 +39,28 @@ public class Visitor extends ASTVisitor{
 	//Visits when there is a primitive type (int, char, ...)
 	@Override
 	public boolean visit(PrimitiveType node) {
-		if(!node.toString().equals("void")) {
-			String key = node.resolveBinding().getQualifiedName();
-			Integer[] count = map.get(key);
-			primiCount ++ ; 
-			if(count != null) 
-				count[1]++;
-			else
-				count = new Integer[] {0,1};
-			map.put(key, count);
-		}
+		try {
+			if(!node.toString().equals("void")) {
+				String key = node.resolveBinding().getQualifiedName();
+				Integer[] count = map.get(key);
+				primiCount ++ ; 
+				if(count != null) 
+					count[1]++;
+				else
+					count = new Integer[] {0,1};
+				map.put(key, count);
+			}
+		}catch(Exception e) {
+			System.out.println(e.toString());
+			primiCount++;
+		}	
 		return super.visit(node);
 	}
 	//Visits when there is a SimpleType type (non-Primitive types like java.lang.String)
 	@Override
 	public boolean visit(SimpleType node) {
-		String key = node.resolveBinding().getQualifiedName();
+		try {
+			String key = node.resolveBinding().getQualifiedName();
 		/*
 		if(node.resolveBinding().getQualifiedName().isEmpty())
 			key= node.resolveBinding().getName();
@@ -63,15 +69,30 @@ public class Visitor extends ASTVisitor{
 			*/
 		//Not sure though
 	//	annotCount ++; 
-		if(node.getParent().toString().endsWith("[]"))
+			if(node.getParent().toString().endsWith("[]"))
 			key += "[]";
 		//System.out.println(node.getParent());
-		Integer[] count = map.get(key);
-		if(count != null) 
-			count[1]++;
-		else
-			count = new Integer[] {0,1};
-		map.put(key, count);
+			Integer[] count = map.get(key);
+			if(count != null) 
+				count[1]++;
+			else
+				count = new Integer[] {0,1};
+			map.put(key, count);
+		}catch(Exception e) {
+			System.out.println(e.toString());
+			
+			String key = "foo";
+			
+			if(node.getParent().toString().endsWith("[]"))
+				key += "[]";
+			
+			Integer[] count = map.get(key);
+			if(count != null) 
+				count[1]++;
+			else
+				count = new Integer[] {0,1};
+			map.put(key, count);
+		}
 		return super.visit(node);
 	}
 	
@@ -103,15 +124,19 @@ public class Visitor extends ASTVisitor{
 
 	@Override
 	public boolean visit(MarkerAnnotation node) {
-		String key = node.resolveTypeBinding().getQualifiedName();
-		Integer[] count = map.get(key);
-		annotCount ++ ;
+		try {
+			String key = node.resolveTypeBinding().getQualifiedName();
+			Integer[] count = map.get(key);
+			annotCount ++ ;
 	
-		if(count != null) 
-			count[1]++;
-		else
-			count = new Integer[] {0,1};
-		map.put(key, count);
+			if(count != null) 
+				count[1]++;
+			else
+				count = new Integer[] {0,1};
+			map.put(key, count);
+		}catch(Exception e) {
+			System.out.println(e.toString());
+		}
 		
 		return super.visit(node);
 	}
@@ -190,9 +215,14 @@ public class Visitor extends ASTVisitor{
 	}
 	
 	public boolean visit(AnonymousClassDeclaration node) {
-		if (node.resolveBinding().isAnonymous()) {
+		try {
+			if (node.resolveBinding().isAnonymous()) {
 			anonymousCount++;
 			System.out.println(node.resolveBinding().getQualifiedName());
+			}
+		}catch(Exception e) {
+			System.out.println(e.toString());
+			anonymousCount++; 
 		}
 		
 		return super.visit(node);
