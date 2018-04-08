@@ -31,3 +31,4 @@ Are nested, local, and anonymous types worthwhile, considering how they are used
 How stable are nested, local, and anonymous types, particularly compared to other types?  (Meaning: How much/how often do they change across versions of the same system?)  Explain how you would realistically change your analysis tool and the actual analysis procedure in order to answer this question.
 How buggy are nested, local, and anonymous types, particularly compared to other types?  Explain how you would realistically change your analysis tool and the actual analysis procedure in order to answer this question.
 - I have no idea how to approach either of these questions :/ derp.
+
