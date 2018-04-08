@@ -1,34 +1,66 @@
-1 & 2) Nested types seem to be declared much more often than local types. Local types seem to be almost rare as apposed to nested types which are quite common.
+1 & 2) Nested types seem to be declared much more often than local types.
+	Local types seem to be almost rare as apposed to nested types which are quite common.
 
-3) Anonymous types seem to fall somewhere in the middle between Nested and Local, while not rare and not very common, they are declared some of the time.
+3) Anonymous types seem to fall somewhere in the middle between Nested and Local,
+	while not rare and not very common, they are declared some of the time.
 
-4) It appears Nested, Local, and Anonymous types arent used as often as other types. The most common type seems to be primitive and other types.
+4) It appears Nested, Local, and Anonymous types arent used as often as other types.
+	The most common type seems to be primitive and other types.
 
-5) Based on the systems I tested, there does not appear to be a difference in the values of types declared. I suspect there isn't a difference because of the basic structure of a well or even standard structured java program.
+5) Based on the systems I tested, there does not appear to be a difference in the
+	values of types declared. I suspect there isn't a difference because of the
+	basic structure of a well or even standard structured java program.
 
 
 How did you select the 100 systems?
-- I selected my 10 systems based on the fact that they represented a large majority of the systems used in Minecraft. Furthermore, these systems have been around for a while, have been supported for years with multiple version released and many people using and contributing to their development.
+- I selected my 10 systems based on the fact that they represented a large majority
+	of the systems used in Minecraft. Furthermore, these systems have been around
+	for a while, have been supported for years with multiple version released and
+	many people using and contributing to their development.
 
 
 How did you collect, record, and analyze the data in order to address the questions?
-- In order to collect and analyze the data we first had to select a propper tool. We initially got our group to test their various tools based on a few common test cases and chose the best one. From there we had to develop the test tool to return some addition information to us as Nested, Local, and Anonymous type declaration counts. From there we created a spreadsheet to pool our information into one local repository.
+- In order to collect and analyze the data we first had to select a propper tool.
+	We initially got our group to test their various tools based on a few common
+	test cases and chose the best one. From there we had to develop the test tool
+	to return some addition information to us as Nested, Local, and Anonymous type
+	declaration counts. From there we created a spreadsheet to pool our information
+	into one local repository.
 
 
-How many bugs did you find in your analysis tool?  Did you rerun earlier systems to make sure that you still obtained the same data?
-- There were definitely a few bugs. First we found that the tool we selected, though best of the pick, was not successfully visiting all the propper nodes. Adding in the missing nodes we found that once we added in our Nested, Local, and Anonymous counts, the counts were not being accumulated accurately. To this point, based on the data collected, it seems either Local types are extremely rare or our tool is failing to count and recognize them properly.
+How many bugs did you find in your analysis tool?  Did you rerun earlier systems
+to make sure that you still obtained the same data?
+- There were definitely a few bugs. First we found that the tool we selected, though
+	best of the pick, was not successfully visiting all the propper nodes. Adding in
+	the missing nodes we found that once we added in our Nested, Local, and Anonymous
+	counts, the counts were not being accumulated accurately. To this point, based on
+	the data collected, it seems either Local types are extremely rare or our tool is
+	failing to count and recognize them properly.
 
 
 Are the results "correct"? How can we know?
-- The results for the most part seem to be accurate but without analyzing each system in detail manually to compare our restuls it would be hard to be 100% certain that the results are correct. Here we rely on our setup of our analysis tool and the accuracy of AST Parser.
+- The results for the most part seem to be accurate but without analyzing each system
+	in detail manually to compare our restuls it would be hard to be 100% certain
+	that the results are correct. Here we rely on our setup of our analysis tool
+	and the accuracy of AST Parser.
 
 How will the results generalize to other Java systems, and to non-Java systems?
-- I believe the results give a basic idea of the kind of structure systems tend to follow but in a very broad sense.
+- I believe the results give a basic idea of the kind of structure systems tend
+	to follow but in a very broad sense.
 
-Are nested, local, and anonymous types worthwhile, considering how they are used in practice and the extra complications that they cause (for developers? for analyzers?)?
-- I believe that nested, local, and anonymous types are definitely worthwhile when used in the propper way. They provide addition functionality and versatility to systems that other types simply cannot.
+Are nested, local, and anonymous types worthwhile, considering how they are used
+in practice and the extra complications that they cause (for developers? for analyzers?)?
+- I believe that nested, local, and anonymous types are definitely worthwhile when
+	used in the propper way. They provide addition functionality and versatility
+	to systems that other types simply cannot.
 
-How stable are nested, local, and anonymous types, particularly compared to other types?  (Meaning: How much/how often do they change across versions of the same system?)  Explain how you would realistically change your analysis tool and the actual analysis procedure in order to answer this question.
-How buggy are nested, local, and anonymous types, particularly compared to other types?  Explain how you would realistically change your analysis tool and the actual analysis procedure in order to answer this question.
+How stable are nested, local, and anonymous types, particularly compared to other
+types?  (Meaning: How much/how often do they change across versions of the same system?)
+Explain how you would realistically change your analysis tool and the actual analysis
+procedure in order to answer this question.
+
+How buggy are nested, local, and anonymous types, particularly compared to other types? 
+Explain how you would realistically change your analysis tool and the actual analysis
+procedure in order to answer this question.
 - I have no idea how to approach either of these questions :/ derp.
 
