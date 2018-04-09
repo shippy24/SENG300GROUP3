@@ -1,0 +1,52 @@
+1. 
+The Number of nested types seem to be very frequent - dominating all other type counts by a marginal amount. 
+The high count appears to be positively correlated with the number of lines of java code - ultimately the complexity or size of the system.
+Programs with more external functionality such as systems such as music players seem to have more nested types since more frontend - functionality (diverse implementation of visuals / events)
+are implemented
+
+2.
+Local Types are not as frequent as nested types - almost rare. This seems to be because many dependencies are outsourced
+
+3.
+Anonymous types didn't really show a positive correlation with the complexity nor the size of the program/system.
+Interestingly, amongst the systems I chose personally, projects with more time and releases seemed to decrease in the number of Anonymous Types
+
+4.
+The most frequently appearing types show to be Primitive Types - I assume this is because algorithmic calculations and code are more primitive-type focused
+
+5.
+The ratio of types seem to be pretty consistent, where nested types dominate amongst nested, local and anonymous types.
+Primitive Types, other Interface counts and Marker Annotations seem to show higher numbers compared to the rest, where primitive types usually have higher counts
+But in systems that are plugins or act as a supplemental function to other systems (web based, applets) tend to have higher marker annotation counts
+
+<<<Selection of Systems>>>
+- The selection was amongst recognized programs in the field of security and music
+- I chose large projects where a lineage of releases were culminated and had official releases available to the public
+- Most systems in the security field with an exception to few standalone projects were plugins to larger and popular systems
+
+<<<Data Collection>>>
+- An iteration of ASTParser that would count individual occurences of the types required was used to count all the types
+- Then using an algorithm specified by the group, certain ratios are presented to possibly see correlations in systems
+
+<<<Bugs>>>
+- A decent number of bugs appeared - a notable one was looking for anonymous class declarations
+
+
+<<<Correctness>>>
+- Projects show consistency in their counts according to their type - since I cannot possibly iterate through each projects source code to find an absolutely objective claim,
+  I had to assume certain things based on my knowledge of java. One would include that certain standalone projects like music players would have a lot of original gui and functionality within the system which would depend more on local Classes and algorithms (types)
+
+<<<Java vs Non-Java>>>
+- I personally believe that the distinction between Java vs Non-java systems would not be much different without further speculation since most modern languages (OO) follow similar repetoires
+- Maybe with more projects to analyze, a possible correlation between the number of existing common dependecies (other projects) for a certain field would be more apparent, since all projects use some sort of major dependency to handle algorithms (encryption in the case of the projects I selected)
+
+
+<<<Types reasonability>>>
+- Usage of the nested, local and anonymous types maybe difficult to analyze in the specifics of the system but are definitely worthwhile - but ultimately it's not possible to analyze systems by the specifics anyway.
+
+
+<<<Flexibility>>>
+- new nested, local and anonymous types appear to fix certain functionalities and ofcourse when adding new features to a system. Introducing new mechanisms is the fastest way to fix/create new features
+- It depends on the system - if the program's scope is smaller the number did not seem to increase drastically as fixes were introduced
+- The analysis tool to objectively describe this phenomena would need to consider previous counts of these types as well as an educated assumption of new features/fixes/modifications introduced to the system. Personally I would use JUNIT testing to get a more accurate picture of how much the code that is being changed or added takes part in the system as a whole
+-- With systems with both frontend and backend, they should be separated during this testing
