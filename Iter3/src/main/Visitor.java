@@ -51,7 +51,7 @@ public class Visitor extends ASTVisitor {
 				map.put(key, count);
 			}
 		}catch(Exception e) {
-			System.out.println(e.toString());
+			//System.out.println(e.toString());
 			primiCount++;
 		}	
 		return super.visit(node);
@@ -79,7 +79,7 @@ public class Visitor extends ASTVisitor {
 				count = new Integer[] {0,1};
 			map.put(key, count);
 		}catch(Exception e) {
-			System.out.println(e.toString());
+			//System.out.println(e.toString());
 			
 			String key = "foo";
 			
@@ -135,7 +135,7 @@ public class Visitor extends ASTVisitor {
 				count = new Integer[] {0,1};
 			map.put(key, count);
 		}catch(Exception e) {
-			System.out.println(e.toString());
+			//System.out.println(e.toString());
 			annotCount++;
 		}
 		
@@ -204,14 +204,27 @@ public class Visitor extends ASTVisitor {
 	//5. Import Declaration
 	@Override
 	public boolean visit(ImportDeclaration node) {
-		String key = node.resolveBinding().getName();
-		Integer[] count = map.get(key);
-		//importDecCount ++ ; 
-		if(count != null) 
-			count[1]++;
-		else
-			count = new Integer[] {0,1};
-		map.put(key, count);
+		try {
+			String key = node.resolveBinding().getName();
+			Integer[] count = map.get(key);
+			//importDecCount ++ ; 
+			if(count != null) 
+				count[1]++;
+			else
+				count = new Integer[] {0,1};
+			map.put(key, count);
+		}catch(Exception e) {
+			//System.out.println(e.toString());
+			String key = "imp";
+			Integer[] count = map.get(key);
+			//importDecCount ++ ; 
+			if(count != null) 
+				count[1]++;
+			else
+				count = new Integer[] {0,1};
+			map.put(key, count);
+		}
+		
 		return super.visit(node);
 	}
 	
@@ -222,7 +235,7 @@ public class Visitor extends ASTVisitor {
 			System.out.println(node.resolveBinding().getQualifiedName());
 			}
 		}catch(Exception e) {
-			System.out.println(e.toString());
+			//System.out.println(e.toString());
 			anonymousCount++; 
 		}
 		
