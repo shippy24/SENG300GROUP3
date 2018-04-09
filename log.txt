@@ -1,0 +1,160 @@
+commit a05283b1c469259742d577067afc683f57664421
+Author: Simran Bhattarai <simran.bhattarai@ucalgary.ca>
+Date:   Sat Apr 7 15:47:12 2018 -0600
+
+    Added Counts for 10 projects
+
+commit 78f6c3cd014b8fe4f448ebf126ee859b66b100b5
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Sat Apr 7 14:45:00 2018 -0600
+
+    Added Counts for Tony/Wilfred
+
+commit a7f9a5bc2b1ccb5f42d9f0d089d572e08d11b1a4
+Merge: 111a081 27c27db
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Sat Apr 7 13:13:30 2018 -0600
+
+    Merge branch 'master' of https://github.com/shippy24/SENG300GROUP3
+
+commit 111a081c62b8b8b7a0a90a8298740e41d46c5bda
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Sat Apr 7 13:13:21 2018 -0600
+
+    Added all annotation counters, fixed anon
+
+commit 27c27dbb387017f284aff1d9cdc35ee725878803
+Author: jr12301 <wilfredojp3@gmail.com>
+Date:   Sat Apr 7 12:55:48 2018 -0600
+
+    Updated Anonymous count.
+
+commit 9f24f143fe026bbfea59b311f2d4f02f196c786c
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Sat Apr 7 12:29:54 2018 -0600
+
+    Changed to cout anon classes
+
+commit c0590aa212ee906e773d93e281534f30e46ce2c3
+Merge: 7bcac63 f8949cb
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Sat Apr 7 11:28:27 2018 -0600
+
+    Merge branch 'master' of https://github.com/shippy24/SENG300GROUP3
+
+commit 7bcac635edd438208308ce5271bf8f8b654063f3
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Sat Apr 7 11:28:24 2018 -0600
+
+    added counter
+
+commit f8949cb70397bc3bde50892a6083cde6ad4f5310
+Author: jr12301 <wilfredojp3@gmail.com>
+Date:   Fri Apr 6 18:39:08 2018 -0600
+
+    Added Counts
+
+commit 02b568175948f30bc4f0e3c5508d5a34180a5c09
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Fri Apr 6 15:33:41 2018 -0600
+
+    added excel
+
+commit f0775b5ad572f6d468de88f340c0e71b2b83ac83
+Author: yuena8 <35675503+yuena8@users.noreply.github.com>
+Date:   Fri Apr 6 17:52:12 2018 +0000
+
+    Added project links
+
+commit 38f1f1a438e47e4e777526f5ac8b52c67ec9782c
+Author: Joshua Schijns <jmschijn@ucalgary.ca>
+Date:   Thu Apr 5 02:20:33 2018 -0600
+
+    added project choices
+
+commit 13240fc290d5b849b42b735f2052dc4eb8918af3
+Author: shippy24 <37120084+shippy24@users.noreply.github.com>
+Date:   Mon Apr 2 00:02:30 2018 -0600
+
+    Shay: Added Project Choices
+
+commit ff9fdce8cecd2fc9b0f506c5347f97ba89b7eb52
+Author: shippy24 <37120084+shippy24@users.noreply.github.com>
+Date:   Sun Apr 1 23:51:20 2018 -0600
+
+    Add files via upload
+    
+    Added Shay Project choices
+
+commit 432fee5e0427efdc8d44259649ba7919e6bf3ab7
+Author: shippy24 <37120084+shippy24@users.noreply.github.com>
+Date:   Sun Apr 1 23:50:55 2018 -0600
+
+    Delete Project Choices.docx
+
+commit c788586c68ceac0bd9685187d81400c7340750a7
+Author: shippy24 <37120084+shippy24@users.noreply.github.com>
+Date:   Sun Apr 1 23:43:40 2018 -0600
+
+    Add files via upload
+    
+    shay: Added project choices
+
+commit 728b79046d42ba91cd2361deb596f011380188d6
+Author: shippy24 <37120084+shippy24@users.noreply.github.com>
+Date:   Sun Apr 1 23:41:36 2018 -0600
+
+    Add files via upload
+    
+    Shay: Added project choices
+
+commit 94b63acb958b1d2de79594ce9cf56e53eb195938
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Sat Mar 31 14:45:04 2018 -0600
+
+    Added Tony and Sims project choices
+
+commit 546d154b4c449c9804913dca19e32094a1dce888
+Merge: 258e41e 2966126
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Sat Mar 31 14:43:40 2018 -0600
+
+    Merge branch 'master' of https://github.com/shippy24/SENG300GROUP3
+    
+    merge
+
+commit 258e41e6eeabb4e2ba08dc41c38b04524afbc1b0
+Author: Tony Tea <tbtea@ucalgary.ca>
+Date:   Sat Mar 31 14:43:21 2018 -0600
+
+    Com
+
+commit 2966126d43960ea8f17843fcc6d00102d2888e90
+Author: Simran Bhattarai <simran.bhattarai@ucalgary.ca>
+Date:   Sat Mar 31 14:30:09 2018 -0600
+
+    Update
+
+commit 08003d4a394fa9bb54a31a553384cbfc2945f9ca
+Author: simsim97 <simran.bhattarai@ucalgary.ca>
+Date:   Sat Mar 31 14:26:54 2018 -0600
+
+    Add files via upload
+
+commit 0a4590d8f5fe084548d219a749e20a17a5648a21
+Author: simsim97 <simran.bhattarai@ucalgary.ca>
+Date:   Sat Mar 31 14:23:16 2018 -0600
+
+    Added my choices
+
+commit 714141edf2e3fa6977e3ec5261cde82e40ac614a
+Author: jr12301 <wilfredojp3@gmail.com>
+Date:   Thu Mar 29 14:02:49 2018 -0600
+
+    Fill in the document with the projects you will be reasearching.
+
+commit 7275d155513d7164185ba771c52a780a2976bf6b
+Author: shippy24 <37120084+shippy24@users.noreply.github.com>
+Date:   Mon Mar 26 15:27:43 2018 -0600
+
+    Create README.md
